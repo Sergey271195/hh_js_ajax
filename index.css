@@ -1,0 +1,151 @@
+html, body, div {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.outerContainer {
+    display: flex;
+    width: 100%;
+}
+
+.searchContainer {
+    margin-top: 20px;
+    width: 30%;
+    margin-left: 50px;
+}
+
+.resultContainer {
+    margin-top: 20px;
+    width: 30%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.resultContainer.hidden {
+    display: none;
+}
+
+.suggestionContainer {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-left: 10px solid  transparent;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    align-items: center;
+    width: 285px;
+}
+
+.suggestionContainer:hover {
+    border-left: 10px solid blueviolet;
+    background-color: rgba(138, 43, 226, 0.5);
+}
+
+.suggestionPicture {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.titleContainer {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.dateContainer {
+    font-size: 12px;
+    font-style: italic;
+}
+
+#searchInput {
+    padding: 5px;
+    padding-right: 0px;
+    font-size: 15px;
+    border: 0;
+    border-bottom: 2px solid blueviolet;
+    outline: none;
+    width: 300px;
+}
+
+.resultTitle {
+    font-size: 15px;
+    margin-top: 10px;
+}
+.resultTitle:before {
+    content: "Title: ";
+    font-weight: bold;
+}
+.resultTitle.hidden {
+    display: none;
+}
+
+.resultPopularity {
+    font-size: 15px;
+    margin-top: 10px;
+}
+.resultPopularity:before {
+    content: "Rating: ";
+    font-weight: bold;
+}
+.resultPopularity.hidden {
+    display: none;
+}
+
+.resultDate {
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 10px;
+}
+.resultDate:before {
+    content: "Release date: ";
+    font-weight: bold;
+    font-style: normal;
+}
+.resultDate.hidden {
+    display: none;
+}
+
+.resultOverview {
+    font-size: 15px;
+    margin-top: 10px;
+}
+.resultOverview:before {
+    content: "Overview: ";
+    font-weight: bold;
+    font-style: normal;
+}
+.resultOverview.hidden {
+    display: none;
+}
+
+.resultVoteAvg {
+    font-size: 15px;
+    margin-top: 10px;
+}
+.resultVoteAvg:before {
+    content: "Average vote: ";
+    font-weight: bold;
+}
+.resultVoteAvg.hidden {
+    display: none;
+}
+
+.latestWrapperTitle {
+    border-left: 10px solid blueviolet;
+    padding-left: 10px;
+}
+
+.latestDivWrapper {
+    min-width: 30%;
+}
+
+#resultImg {
+    width: 185px;
+}

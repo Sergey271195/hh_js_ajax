@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search with suggest</title>
+    <link rel = "stylesheet" href = "./index.css"></link>
+</head>
+<body>
+    <div class = 'outerContainer'>
+
+        <div class = "searchContainer">
+            <input type = "text" id = "searchInput" name ="search" value = "" autocomplete="off" placeholder="Search for films"/>
+            <div id = "searchList"></div>
+        </div>
+
+        <div class = 'latestDivWrapper'>
+            <h4 class = "latestWrapperTitle">Search result</h4>
+            <div id = "resultDiv" name = "" class = "resultContainer hidden">
+                <div id = "resultImg"></div>
+                <div id = "original_title" class = 'resultTitle'></div>
+                <div id = "overview" class = 'resultOverview'></div>
+                <div id = "popularity" class = 'resultPopularity'></div>
+                <div id = "release_date" class = 'resultDate'></div>
+                <div id = "vote_average" class = 'resultVoteAvg'></div>
+            </div>
+        </div>
+
+        <div class = 'latestDivWrapper'>
+            <h4 class = "latestWrapperTitle">Latest searched</h4>
+            <div id = "latestDiv" class = "latestContainer"></div>
+        </div>
+        
+
+    </div>
+</body>
+
+<script src = './main.js'></script>
+
+
+</html>
